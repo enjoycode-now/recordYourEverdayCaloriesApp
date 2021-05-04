@@ -225,11 +225,12 @@ public class MainActivity extends AppCompatActivity {
         // set date label formatter
         graphView.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(MainActivity.this));
         //最多同时显示5个，太多会重叠
-        graphView.getGridLabelRenderer().setNumHorizontalLabels(5);
+        graphView.getGridLabelRenderer().setNumHorizontalLabels(4);
 
         // set manual x bounds to have nice steps
-        graphView.getViewport().setMinX(dataParse.getNowCT().get(0).getDate().getTime());
-        graphView.getViewport().setMaxX(dataParse.getNowCT().get(size-1).getDate().getTime());
+//        graphView.getViewport().setMinX(dataParse.getNowCT().get(0).getDate().getTime());
+//        graphView.getViewport().setMaxX(dataParse.getNowCT().get(size-1).getDate().getTime());
+
 //        graphView.getViewport().setMinY(0);
 //        graphView.getViewport().setMaxY(5000);
 //        graphView.getViewport().setYAxisBoundsManual(true);

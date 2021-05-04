@@ -21,11 +21,9 @@
         android:id="@+id/btn_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="8dp"
         android:text="编辑"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView2"
@@ -55,6 +53,7 @@
         android:layout_height="wrap_content"
         android:text="click"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_edit"
         app:layout_constraintTop_toTopOf="@+id/date_start" />
 
     <Button
@@ -63,6 +62,7 @@
         android:layout_height="wrap_content"
         android:text="click"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_begin"
         app:layout_constraintTop_toTopOf="@+id/date_end" />
 
     <Button

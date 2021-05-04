@@ -43,6 +43,7 @@
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
+        android:inputType="number"
         android:hint="请输入当天消耗的卡路里："
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
