@@ -30,6 +30,7 @@ import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter;
 import com.jjoe64.graphview.series.BarGraphSeries;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
+import com.xuexiang.xui.XUI;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
@@ -41,6 +42,7 @@ import java.util.List;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
+
     private Button btn_edit = null;//“编辑”按钮
     private Button btn_begin = null;//“输入开始日期”按钮
     private Button btn_end = null;//“输入结束日期”按钮
@@ -55,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //XUI的初始化一定要放在super.onCreate之前
+        XUI.initTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

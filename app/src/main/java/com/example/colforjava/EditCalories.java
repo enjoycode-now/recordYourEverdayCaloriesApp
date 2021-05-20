@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.xuexiang.xui.XUI;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -37,6 +38,7 @@ public class EditCalories extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        XUI.initTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_calories);
         btn_update =(Button)findViewById(R.id.btn_update);

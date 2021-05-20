@@ -1,8 +1,12 @@
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <TextView
             android:id="@+id/text1"
             android:layout_width="wrap_content"
@@ -17,4 +21,9 @@
             android:textColorHighlight="@color/teal_200"
             android:textColor="@color/teal_700"
             android:hint="卡路里" />
+    </LinearLayout>
+
+
+
+
     </LinearLayout>

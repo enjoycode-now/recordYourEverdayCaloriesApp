@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.xuexiang.xui.XUI;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -43,6 +44,7 @@ public class CalendarAndCalories extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        XUI.initTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_and_calories);
 
@@ -60,6 +62,8 @@ public class CalendarAndCalories extends AppCompatActivity {
 //        CaloriesTimescaleAdapter testD = new CaloriesTimescaleAdapter(ct);
         testD = new CaloriesTimescaleAdapter(dataParse.getNowCT());
         recyclerView.setAdapter(testD);
+        recyclerView.addItemDecoration(new RecycleViewDivider(
+                getApplicationContext(), LinearLayoutManager.VERTICAL, R.drawable.divider_mileage));
 
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
